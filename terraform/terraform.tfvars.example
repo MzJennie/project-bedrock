@@ -1,0 +1,6 @@
+region               = "us-east-1"
+project_name         = "project-bedrock"
+student_id           = "alt-soe-025-3635"
+environment          = "production"
+db_password_mysql    = "your-mysql-password-here"
+db_password_postgres = "your-postgres-password-here"
