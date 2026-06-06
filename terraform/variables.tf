@@ -49,7 +49,7 @@ variable "db_password_postgres" {
 variable "tags" {
   description = "Common tags"
   type        = map(string)
-  default     = {
+  default = {
     Project     = "karatu-2025-capstone"
     Environment = "production"
     ManagedBy   = "terraform"

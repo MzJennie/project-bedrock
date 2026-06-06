@@ -1,52 +1,48 @@
-# Override values for retail-store-sample-app
-# Replaces in-cluster databases with managed AWS services
+# Retail Store Application
+# Uses AWS managed services provisioned by Terraform
 
-global:
-  env: production
-
-# Disable in-cluster databases
-mysql:
-  enabled: false
-
-postgresql:
-  enabled: false
-
-# Backend services - use managed AWS RDS
 catalog:
-  db:
-    host: MYSQL_ENDPOINT_PLACEHOLDER
-    name: retailstore
-    user: admin
-    passwordSecretName: project-bedrock-mysql-credentials
+  app:
+    persistence:
+      provider: mysql
+      endpoint: project-bedrock-mysql.cop8qmuak7in.us-east-1.rds.amazonaws.com
+      database: retailstore
+
+      secret:
+        create: false
+        name: catalog-db
 
 orders:
-  db:
-    host: POSTGRES_ENDPOINT_PLACEHOLDER
-    name: retailstore
-    user: admin
-    passwordSecretName: project-bedrock-postgres-credentials
+  app:
+    persistence:
+      provider: postgres
+      endpoint: project-bedrock-postgres.cop8qmuak7in.us-east-1.rds.amazonaws.com
+      database: retailstore
 
-# DynamoDB for carts
-carts:
-  dynamodb:
-    enabled: true
-    region: us-east-1
-    tableName: project-bedrock-carts
+      secret:
+        create: false
+        name: orders-db
 
-# Keep Redis and RabbitMQ in-cluster (acceptable per requirements)
-redis:
-  enabled: true
+    messaging:
+      provider: rabbitmq
 
-rabbitmq:
-  enabled: true
+cart:
+  app:
+    persistence:
+      provider: dynamodb
 
-# UI configuration
+      dynamodb:
+        tableName: project-bedrock-carts
+        createTable: false
+
 ui:
-  service:
-    type: ClusterIP
   ingress:
     enabled: true
+    className: alb
+
     annotations:
-      kubernetes.io/ingress.class: alb
       alb.ingress.kubernetes.io/scheme: internet-facing
       alb.ingress.kubernetes.io/target-type: ip
+
+    hosts:
+      - project-bedrock.54.165.244.253.nip.io

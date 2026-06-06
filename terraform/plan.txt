@@ -1,0 +1,35 @@
+[0m[1mvar.db_password_mysql[0m
+  MySQL RDS password
+
+  [1mEnter a value:[0m [0m
+
+[0m[1mvar.db_password_postgres[0m
+  PostgreSQL RDS password
+
+  [1mEnter a value:[0m [0m
+
+
+Interrupt received.
+Please wait for Terraform to exit or data loss may occur.
+Gracefully shutting down...
+
+Stopping operation...
+[0m[1mmodule.s3_lambda.data.archive_file.lambda_zip: Reading...[0m[0m
+[0m[1mmodule.s3_lambda.data.archive_file.lambda_zip: Read complete after 0s [id=d5a46008bdfb36f34c11a941a78dc6f1de9a8356][0m
+[0m[1mmodule.iam.aws_iam_role.eks_nodes: Refreshing state... [id=project-bedrock-eks-nodes-role][0m
+[0m[1mmodule.dynamodb.aws_dynamodb_table.carts: Refreshing state... [id=project-bedrock-carts][0m
+[0m[1mmodule.iam.aws_iam_user.dev_view: Refreshing state... [id=bedrock-dev-view][0m
+[0m[1mmodule.iam.aws_iam_policy.alb_controller: Refreshing state... [id=arn:aws:iam::082884564197:policy/project-bedrock-alb-controller-policy][0m
+[0m[1mmodule.s3_lambda.aws_s3_bucket.assets: Refreshing state... [id=bedrock-assets-alt-soe-025-3635][0m
+[0m[1mmodule.vpc.aws_vpc.main: Refreshing state... [id=vpc-03167faf956a9f652][0m
+[0m[1mmodule.vpc.aws_eip.nat[0]: Refreshing state... [id=eipalloc-023472a0cb3eca065][0m
+[0m[1mmodule.dynamodb.aws_dynamodb_table.orders: Refreshing state... [id=project-bedrock-orders][0m
+[0m[1mmodule.iam.aws_iam_role.eks_cluster: Refreshing state... [id=project-bedrock-eks-cluster-role][0m
+[0m[1mmodule.rds.aws_secretsmanager_secret.mysql_credentials: Refreshing state... [id=arn:aws:secretsmanager:us-east-1:082884564197:secret:project-bedrock-mysql-credentials-h94wOn][0m
+[0m[1mmodule.iam.aws_iam_role.lambda_role: Refreshing state... [id=project-bedrock-lambda-role][0m
+[0m[1mmodule.rds.aws_secretsmanager_secret.postgres_credentials: Refreshing state... [id=arn:aws:secretsmanager:us-east-1:082884564197:secret:project-bedrock-postgres-credentials-ZdwVZp][0m
+[0m[1mmodule.iam.aws_iam_user_policy.dev_s3_put: Refreshing state... [id=bedrock-dev-view:bedrock-dev-s3-put][0m
+[0m[1mmodule.iam.aws_iam_user_login_profile.dev_view: Refreshing state... [id=bedrock-dev-view][0m
+[0m[1mmodule.iam.aws_iam_access_key.dev_view: Refreshing state... [id=AKIARGTCOCTS6N5SL2OC][0m
+[0m[1mmodule.iam.aws_iam_user_policy_attachment.dev_readonly: Refreshing state... [id=bedrock-dev-view-20260601093010493400000003][0m
+[0m[1mmodule.iam.aws_iam_role_policy_attachment.eks_cni_policy: Refreshing state... [id=project-bedrock-eks-nodes-role-20260601093011096700000007][0m

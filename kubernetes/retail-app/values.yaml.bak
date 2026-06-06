@@ -1,0 +1,52 @@
+# Override values for retail-store-sample-app
+# Replaces in-cluster databases with managed AWS services
+
+global:
+  env: production
+
+# Disable in-cluster databases
+mysql:
+  enabled: false
+
+postgresql:
+  enabled: false
+
+# Backend services - use managed AWS RDS
+catalog:
+  db:
+    host: project-bedrock-mysql.cop8qmuak7in.us-east-1.rds.amazonaws.com
+    name: retailstore
+    user: admin
+    passwordSecretName: project-bedrock-mysql-credentials
+
+orders:
+  db:
+    host: project-bedrock-postgres.cop8qmuak7in.us-east-1.rds.amazonaws.com
+    name: retailstore
+    user: admin
+    passwordSecretName: project-bedrock-postgres-credentials
+
+# DynamoDB for carts
+carts:
+  dynamodb:
+    enabled: true
+    region: us-east-1
+    tableName: project-bedrock-carts
+
+# Keep Redis and RabbitMQ in-cluster (acceptable per requirements)
+redis:
+  enabled: true
+
+rabbitmq:
+  enabled: true
+
+# UI configuration
+ui:
+  service:
+    type: ClusterIP
+  ingress:
+    enabled: true
+    annotations:
+      kubernetes.io/ingress.class: alb
+      alb.ingress.kubernetes.io/scheme: internet-facing
+      alb.ingress.kubernetes.io/target-type: ip

@@ -25,7 +25,7 @@ resource "aws_db_instance" "mysql" {
   storage_type      = "gp2"
 
   db_name  = "retailstore"
-  username = "admin"
+  username = "bedrockadmin"
   password = var.db_password_mysql
 
   db_subnet_group_name   = aws_db_subnet_group.mysql.name
@@ -44,13 +44,13 @@ resource "aws_db_instance" "mysql" {
 resource "aws_db_instance" "postgres" {
   identifier        = "${var.project_name}-postgres"
   engine            = "postgres"
-  engine_version    = "15.4"
+  engine_version    = "15.8"
   instance_class    = "db.t3.micro"
   allocated_storage = 20
   storage_type      = "gp2"
 
   db_name  = "retailstore"
-  username = "admin"
+  username = "bedrockadmin"
   password = var.db_password_postgres
 
   db_subnet_group_name   = aws_db_subnet_group.postgres.name
@@ -75,7 +75,7 @@ resource "aws_secretsmanager_secret" "mysql_credentials" {
 resource "aws_secretsmanager_secret_version" "mysql_credentials" {
   secret_id = aws_secretsmanager_secret.mysql_credentials.id
   secret_string = jsonencode({
-    username = "admin"
+    username = "bedrockadmin"
     password = var.db_password_mysql
     host     = aws_db_instance.mysql.address
     port     = 3306
@@ -92,7 +92,7 @@ resource "aws_secretsmanager_secret" "postgres_credentials" {
 resource "aws_secretsmanager_secret_version" "postgres_credentials" {
   secret_id = aws_secretsmanager_secret.postgres_credentials.id
   secret_string = jsonencode({
-    username = "admin"
+    username = "bedrockadmin"
     password = var.db_password_postgres
     host     = aws_db_instance.postgres.address
     port     = 5432
