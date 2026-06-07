@@ -14,3 +14,7 @@ variable "tags" {
   type    = map(string)
   default = {}
 }
+
+variable "cluster_security_group_id" {
+  type = string
+}
