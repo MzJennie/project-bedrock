@@ -1,0 +1,2 @@
+NAME        	NAMESPACE 	REVISION	UPDATED                                	STATUS  	CHART                          	APP VERSION
+retail-store	retail-app	4       	2026-06-04 04:58:05.791912229 +0000 UTC	deployed	retail-store-sample-chart-1.6.1	           

@@ -1,0 +1,6 @@
+NAME       TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)   AGE
+carts      ClusterIP   172.20.25.161    <none>        80/TCP    3d20h
+catalog    ClusterIP   172.20.12.18     <none>        80/TCP    3d20h
+checkout   ClusterIP   172.20.176.189   <none>        80/TCP    3d20h
+orders     ClusterIP   172.20.14.143    <none>        80/TCP    3d20h
+ui         ClusterIP   172.20.54.166    <none>        80/TCP    3d20h

@@ -1,0 +1,2 @@
+NAME   CLASS   HOSTS                                   ADDRESS                                                            PORTS   AGE
+ui     alb     project-bedrock.54.165.244.253.nip.io   k8s-retailap-ui-6039ab69e6-933018830.us-east-1.elb.amazonaws.com   80      3d20h

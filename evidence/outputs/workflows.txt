@@ -1,0 +1,4 @@
+total 12
+drwxrwxr-x 2 vagrant vagrant 4096 Jun  7 08:31 .
+drwxrwxr-x 3 vagrant vagrant 4096 May 30 21:22 ..
+-rw-rw-r-- 1 vagrant vagrant 2690 Jun  7 08:31 terraform.yml

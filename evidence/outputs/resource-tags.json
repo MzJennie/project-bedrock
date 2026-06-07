@@ -1,0 +1,630 @@
+{
+    "ResourceTagMappingList": [
+        {
+            "ResourceARN": "arn:aws:ec2:us-east-1:082884564197:security-group/sg-042197a9310b8ff32",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-eks-nodes-sg"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:rds:us-east-1:082884564197:db:project-bedrock-postgres",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-postgres"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:us-east-1:082884564197:natgateway/nat-0210024a57f08772d",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-nat"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:us-east-1:082884564197:security-group/sg-0c6d801146ce54017",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-rds-postgres-sg"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:us-east-1:082884564197:subnet/subnet-05ed80b1c226b1236",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/project-bedrock-cluster",
+                    "Value": "shared"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "kubernetes.io/role/elb",
+                    "Value": "1"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-public-us-east-1a"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:lambda:us-east-1:082884564197:function:bedrock-asset-processor",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "bedrock-asset-processor"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:dynamodb:us-east-1:082884564197:table/project-bedrock-carts",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-carts"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:dynamodb:us-east-1:082884564197:table/project-bedrock-orders",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-orders"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:us-east-1:082884564197:internet-gateway/igw-03c68415b7296ad3a",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-igw"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:us-east-1:082884564197:security-group/sg-0762679d28aa510ce",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-rds-mysql-sg"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:us-east-1:082884564197:addon/project-bedrock-cluster/kube-proxy/a4cf4272-7842-78ab-0f39-5044370d5405",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:s3:::bedrock-assets-alt-soe-025-3635",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "bedrock-assets-alt-soe-025-3635"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:us-east-1:082884564197:elastic-ip/eipalloc-023472a0cb3eca065",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-nat-eip"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:us-east-1:082884564197:route-table/rtb-0a2eb10c408035097",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-public-rt"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:us-east-1:082884564197:subnet/subnet-0652286e3e0f0ecc6",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/project-bedrock-cluster",
+                    "Value": "shared"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "kubernetes.io/role/internal-elb",
+                    "Value": "1"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-private-us-east-1a"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:us-east-1:082884564197:nodegroup/project-bedrock-cluster/project-bedrock-node-group/62cf4583-5bb1-46cd-bfd0-d029dbbba80d",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:iam::082884564197:policy/project-bedrock-alb-controller-policy",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:us-east-1:082884564197:addon/project-bedrock-cluster/amazon-cloudwatch-observability/02cf4584-3792-5f39-3ad2-365685e985a2",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:rds:us-east-1:082884564197:subgrp:project-bedrock-mysql-subnet-group",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-mysql-subnet-group"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:us-east-1:082884564197:subnet/subnet-0fd6653dfc8e0a4b9",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/project-bedrock-cluster",
+                    "Value": "shared"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "kubernetes.io/role/elb",
+                    "Value": "1"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-public-us-east-1b"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:us-east-1:082884564197:addon/project-bedrock-cluster/vpc-cni/c2cf4272-7846-5d3a-7122-49227d55bd66",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:us-east-1:082884564197:cluster/project-bedrock-cluster",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:rds:us-east-1:082884564197:db:project-bedrock-mysql",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-mysql"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:secretsmanager:us-east-1:082884564197:secret:project-bedrock-postgres-credentials-ZdwVZp",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:us-east-1:082884564197:route-table/rtb-0f7c7b28097785af9",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-private-rt"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:us-east-1:082884564197:vpc/vpc-03167faf956a9f652",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-vpc"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:eks:us-east-1:082884564197:addon/project-bedrock-cluster/coredns/32cf4272-7841-952f-74a7-a2644dff3a5b",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:rds:us-east-1:082884564197:subgrp:project-bedrock-postgres-subnet-group",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-postgres-subnet-group"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:secretsmanager:us-east-1:082884564197:secret:project-bedrock-mysql-credentials-h94wOn",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                }
+            ]
+        },
+        {
+            "ResourceARN": "arn:aws:ec2:us-east-1:082884564197:subnet/subnet-010d6d7f9268856af",
+            "Tags": [
+                {
+                    "Key": "Project",
+                    "Value": "karatu-2025-capstone"
+                },
+                {
+                    "Key": "kubernetes.io/cluster/project-bedrock-cluster",
+                    "Value": "shared"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "terraform"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "production"
+                },
+                {
+                    "Key": "kubernetes.io/role/internal-elb",
+                    "Value": "1"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "project-bedrock-private-us-east-1b"
+                }
+            ]
+        }
+    ]
+}

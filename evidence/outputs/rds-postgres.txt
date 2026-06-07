@@ -1,0 +1,104 @@
+----------------------------------------------------------------------------------------------------------
+|                                           DescribeDBInstances                                          |
++--------------------------------------------------------------------------------------------------------+
+||                                              DBInstances                                             ||
+|+-----------------------------------+------------------------------------------------------------------+|
+||  ActivityStreamStatus             |  stopped                                                         ||
+||  AllocatedStorage                 |  20                                                              ||
+||  AutoMinorVersionUpgrade          |  True                                                            ||
+||  AvailabilityZone                 |  us-east-1a                                                      ||
+||  BackupRetentionPeriod            |  0                                                               ||
+||  BackupTarget                     |  region                                                          ||
+||  CACertificateIdentifier          |  rds-ca-rsa2048-g1                                               ||
+||  CopyTagsToSnapshot               |  False                                                           ||
+||  CustomerOwnedIpEnabled           |  False                                                           ||
+||  DBInstanceArn                    |  arn:aws:rds:us-east-1:082884564197:db:project-bedrock-postgres  ||
+||  DBInstanceClass                  |  db.t3.micro                                                     ||
+||  DBInstanceIdentifier             |  project-bedrock-postgres                                        ||
+||  DBInstanceStatus                 |  available                                                       ||
+||  DBName                           |  retailstore                                                     ||
+||  DatabaseInsightsMode             |  standard                                                        ||
+||  DbInstancePort                   |  0                                                               ||
+||  DbiResourceId                    |  db-PHHB47543D3DXATL3DW5W3LEBM                                   ||
+||  DedicatedLogVolume               |  False                                                           ||
+||  DeletionProtection               |  False                                                           ||
+||  Engine                           |  postgres                                                        ||
+||  EngineLifecycleSupport           |  open-source-rds-extended-support                                ||
+||  EngineVersion                    |  15.8                                                            ||
+||  IAMDatabaseAuthenticationEnabled |  False                                                           ||
+||  InstanceCreateTime               |  2026-06-01T21:48:39.658000+00:00                                ||
+||  IsStorageConfigUpgradeAvailable  |  False                                                           ||
+||  LicenseModel                     |  postgresql-license                                              ||
+||  MasterUsername                   |  bedrockadmin                                                    ||
+||  MonitoringInterval               |  0                                                               ||
+||  MultiAZ                          |  False                                                           ||
+||  NetworkType                      |  IPV4                                                            ||
+||  PerformanceInsightsEnabled       |  False                                                           ||
+||  PreferredBackupWindow            |  06:48-07:18                                                     ||
+||  PreferredMaintenanceWindow       |  tue:03:34-tue:04:04                                             ||
+||  PubliclyAccessible               |  False                                                           ||
+||  StorageEncrypted                 |  False                                                           ||
+||  StorageThroughput                |  0                                                               ||
+||  StorageType                      |  gp2                                                             ||
+||  UpgradeRolloutOrder              |  second                                                          ||
+|+-----------------------------------+------------------------------------------------------------------+|
+|||                                         CertificateDetails                                         |||
+||+----------------------------------+-----------------------------------------------------------------+||
+|||  CAIdentifier                    |  rds-ca-rsa2048-g1                                              |||
+|||  ValidTill                       |  2027-06-01T21:47:21+00:00                                      |||
+||+----------------------------------+-----------------------------------------------------------------+||
+|||                                          DBParameterGroups                                         |||
+||+---------------------------------------------------+------------------------------------------------+||
+|||  DBParameterGroupName                             |  default.postgres15                            |||
+|||  ParameterApplyStatus                             |  in-sync                                       |||
+||+---------------------------------------------------+------------------------------------------------+||
+|||                                            DBSubnetGroup                                           |||
+||+---------------------------------------+------------------------------------------------------------+||
+|||  DBSubnetGroupDescription             |  Managed by Terraform                                      |||
+|||  DBSubnetGroupName                    |  project-bedrock-postgres-subnet-group                     |||
+|||  SubnetGroupStatus                    |  Complete                                                  |||
+|||  VpcId                                |  vpc-03167faf956a9f652                                     |||
+||+---------------------------------------+------------------------------------------------------------+||
+||||                                              Subnets                                             ||||
+|||+----------------------------------------+---------------------------------------------------------+|||
+||||  SubnetIdentifier                      |  subnet-010d6d7f9268856af                               ||||
+||||  SubnetStatus                          |  Active                                                 ||||
+|||+----------------------------------------+---------------------------------------------------------+|||
+|||||                                     SubnetAvailabilityZone                                     |||||
+||||+----------------------------------+-------------------------------------------------------------+||||
+|||||  Name                            |  us-east-1b                                                 |||||
+||||+----------------------------------+-------------------------------------------------------------+||||
+||||                                              Subnets                                             ||||
+|||+----------------------------------------+---------------------------------------------------------+|||
+||||  SubnetIdentifier                      |  subnet-0652286e3e0f0ecc6                               ||||
+||||  SubnetStatus                          |  Active                                                 ||||
+|||+----------------------------------------+---------------------------------------------------------+|||
+|||||                                     SubnetAvailabilityZone                                     |||||
+||||+----------------------------------+-------------------------------------------------------------+||||
+|||||  Name                            |  us-east-1a                                                 |||||
+||||+----------------------------------+-------------------------------------------------------------+||||
+|||                                              Endpoint                                              |||
+||+-----------------+----------------------------------------------------------------------------------+||
+|||  Address        |  project-bedrock-postgres.cop8qmuak7in.us-east-1.rds.amazonaws.com               |||
+|||  HostedZoneId   |  Z2R2ITUGPM61AM                                                                  |||
+|||  Port           |  5432                                                                            |||
+||+-----------------+----------------------------------------------------------------------------------+||
+|||                                       OptionGroupMemberships                                       |||
+||+--------------------------------------------+-------------------------------------------------------+||
+|||  OptionGroupName                           |  default:postgres-15                                  |||
+|||  Status                                    |  in-sync                                              |||
+||+--------------------------------------------+-------------------------------------------------------+||
+|||                                               TagList                                              |||
+||+----------------------------------+-----------------------------------------------------------------+||
+|||                Key               |                              Value                              |||
+||+----------------------------------+-----------------------------------------------------------------+||
+|||  Project                         |  karatu-2025-capstone                                           |||
+|||  Environment                     |  production                                                     |||
+|||  ManagedBy                       |  terraform                                                      |||
+|||  Name                            |  project-bedrock-postgres                                       |||
+||+----------------------------------+-----------------------------------------------------------------+||
+|||                                          VpcSecurityGroups                                         |||
+||+-----------------------------------------------+----------------------------------------------------+||
+|||  Status                                       |  active                                            |||
+|||  VpcSecurityGroupId                           |  sg-0c6d801146ce54017                              |||
+||+-----------------------------------------------+----------------------------------------------------+||

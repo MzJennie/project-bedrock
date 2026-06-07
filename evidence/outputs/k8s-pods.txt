@@ -1,0 +1,6 @@
+NAME                        READY   STATUS    RESTARTS   AGE
+carts-6cb6dcbc78-cnp46      1/1     Running   0          3d16h
+catalog-797c64ddfc-pvp5s    1/1     Running   0          3d19h
+checkout-7b7db788fb-wr54b   1/1     Running   0          3d20h
+orders-78945c4b57-gb9w6     1/1     Running   0          3d19h
+ui-65c6f5fd98-wg7qb         1/1     Running   0          3d20h

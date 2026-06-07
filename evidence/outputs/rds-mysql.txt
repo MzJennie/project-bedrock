@@ -1,0 +1,104 @@
+-------------------------------------------------------------------------------------------------------
+|                                         DescribeDBInstances                                         |
++-----------------------------------------------------------------------------------------------------+
+||                                            DBInstances                                            ||
+|+-----------------------------------+---------------------------------------------------------------+|
+||  ActivityStreamStatus             |  stopped                                                      ||
+||  AllocatedStorage                 |  20                                                           ||
+||  AutoMinorVersionUpgrade          |  True                                                         ||
+||  AvailabilityZone                 |  us-east-1a                                                   ||
+||  BackupRetentionPeriod            |  0                                                            ||
+||  BackupTarget                     |  region                                                       ||
+||  CACertificateIdentifier          |  rds-ca-rsa2048-g1                                            ||
+||  CopyTagsToSnapshot               |  False                                                        ||
+||  CustomerOwnedIpEnabled           |  False                                                        ||
+||  DBInstanceArn                    |  arn:aws:rds:us-east-1:082884564197:db:project-bedrock-mysql  ||
+||  DBInstanceClass                  |  db.t3.micro                                                  ||
+||  DBInstanceIdentifier             |  project-bedrock-mysql                                        ||
+||  DBInstanceStatus                 |  available                                                    ||
+||  DBName                           |  retailstore                                                  ||
+||  DatabaseInsightsMode             |  standard                                                     ||
+||  DbInstancePort                   |  0                                                            ||
+||  DbiResourceId                    |  db-LC4CDJC7QSDLM75SD3EXYIM5RI                                ||
+||  DedicatedLogVolume               |  False                                                        ||
+||  DeletionProtection               |  False                                                        ||
+||  Engine                           |  mysql                                                        ||
+||  EngineLifecycleSupport           |  open-source-rds-extended-support                             ||
+||  EngineVersion                    |  8.0.45                                                       ||
+||  IAMDatabaseAuthenticationEnabled |  False                                                        ||
+||  InstanceCreateTime               |  2026-06-01T21:48:53.746000+00:00                             ||
+||  IsStorageConfigUpgradeAvailable  |  False                                                        ||
+||  LicenseModel                     |  general-public-license                                       ||
+||  MasterUsername                   |  bedrockadmin                                                 ||
+||  MonitoringInterval               |  0                                                            ||
+||  MultiAZ                          |  False                                                        ||
+||  NetworkType                      |  IPV4                                                         ||
+||  PerformanceInsightsEnabled       |  False                                                        ||
+||  PreferredBackupWindow            |  06:50-07:20                                                  ||
+||  PreferredMaintenanceWindow       |  tue:09:29-tue:09:59                                          ||
+||  PubliclyAccessible               |  False                                                        ||
+||  StorageEncrypted                 |  False                                                        ||
+||  StorageThroughput                |  0                                                            ||
+||  StorageType                      |  gp2                                                          ||
+||  UpgradeRolloutOrder              |  second                                                       ||
+|+-----------------------------------+---------------------------------------------------------------+|
+|||                                       CertificateDetails                                        |||
+||+---------------------------------+---------------------------------------------------------------+||
+|||  CAIdentifier                   |  rds-ca-rsa2048-g1                                            |||
+|||  ValidTill                      |  2027-06-01T21:47:29+00:00                                    |||
+||+---------------------------------+---------------------------------------------------------------+||
+|||                                        DBParameterGroups                                        |||
+||+----------------------------------------------------+--------------------------------------------+||
+|||  DBParameterGroupName                              |  default.mysql8.0                          |||
+|||  ParameterApplyStatus                              |  in-sync                                   |||
+||+----------------------------------------------------+--------------------------------------------+||
+|||                                          DBSubnetGroup                                          |||
+||+----------------------------------------+--------------------------------------------------------+||
+|||  DBSubnetGroupDescription              |  Managed by Terraform                                  |||
+|||  DBSubnetGroupName                     |  project-bedrock-mysql-subnet-group                    |||
+|||  SubnetGroupStatus                     |  Complete                                              |||
+|||  VpcId                                 |  vpc-03167faf956a9f652                                 |||
+||+----------------------------------------+--------------------------------------------------------+||
+||||                                            Subnets                                            ||||
+|||+--------------------------------------+--------------------------------------------------------+|||
+||||  SubnetIdentifier                    |  subnet-010d6d7f9268856af                              ||||
+||||  SubnetStatus                        |  Active                                                ||||
+|||+--------------------------------------+--------------------------------------------------------+|||
+|||||                                   SubnetAvailabilityZone                                    |||||
+||||+---------------------------------+-----------------------------------------------------------+||||
+|||||  Name                           |  us-east-1b                                               |||||
+||||+---------------------------------+-----------------------------------------------------------+||||
+||||                                            Subnets                                            ||||
+|||+--------------------------------------+--------------------------------------------------------+|||
+||||  SubnetIdentifier                    |  subnet-0652286e3e0f0ecc6                              ||||
+||||  SubnetStatus                        |  Active                                                ||||
+|||+--------------------------------------+--------------------------------------------------------+|||
+|||||                                   SubnetAvailabilityZone                                    |||||
+||||+---------------------------------+-----------------------------------------------------------+||||
+|||||  Name                           |  us-east-1a                                               |||||
+||||+---------------------------------+-----------------------------------------------------------+||||
+|||                                            Endpoint                                             |||
+||+-----------------+-------------------------------------------------------------------------------+||
+|||  Address        |  project-bedrock-mysql.cop8qmuak7in.us-east-1.rds.amazonaws.com               |||
+|||  HostedZoneId   |  Z2R2ITUGPM61AM                                                               |||
+|||  Port           |  3306                                                                         |||
+||+-----------------+-------------------------------------------------------------------------------+||
+|||                                     OptionGroupMemberships                                      |||
+||+---------------------------------------------+---------------------------------------------------+||
+|||  OptionGroupName                            |  default:mysql-8-0                                |||
+|||  Status                                     |  in-sync                                          |||
+||+---------------------------------------------+---------------------------------------------------+||
+|||                                             TagList                                             |||
+||+-----------------------------------+-------------------------------------------------------------+||
+|||                Key                |                            Value                            |||
+||+-----------------------------------+-------------------------------------------------------------+||
+|||  Project                          |  karatu-2025-capstone                                       |||
+|||  Environment                      |  production                                                 |||
+|||  ManagedBy                        |  terraform                                                  |||
+|||  Name                             |  project-bedrock-mysql                                      |||
+||+-----------------------------------+-------------------------------------------------------------+||
+|||                                        VpcSecurityGroups                                        |||
+||+---------------------------------------------+---------------------------------------------------+||
+|||  Status                                     |  active                                           |||
+|||  VpcSecurityGroupId                         |  sg-0762679d28aa510ce                             |||
+||+---------------------------------------------+---------------------------------------------------+||
