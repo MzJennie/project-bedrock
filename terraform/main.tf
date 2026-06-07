@@ -30,6 +30,8 @@ module "security_groups" {
   vpc_id       = module.vpc.vpc_id
   vpc_cidr     = module.vpc.vpc_cidr
   tags         = var.tags
+
+  cluster_security_group_id = module.eks.cluster_security_group_id
 }
 
 module "iam" {

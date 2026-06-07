@@ -4,10 +4,10 @@ resource "aws_security_group" "eks_nodes" {
   vpc_id      = var.vpc_id
 
   ingress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    self        = true
+    from_port = 0
+    to_port   = 0
+    protocol  = "-1"
+    self      = true
   }
 
   ingress {
@@ -42,10 +42,14 @@ resource "aws_security_group" "rds_mysql" {
   vpc_id      = var.vpc_id
 
   ingress {
-    from_port       = 3306
-    to_port         = 3306
-    protocol        = "tcp"
-    security_groups = [aws_security_group.eks_nodes.id]
+    from_port = 3306
+    to_port   = 3306
+    protocol  = "tcp"
+
+    security_groups = [
+      aws_security_group.eks_nodes.id,
+      var.cluster_security_group_id
+    ]
   }
 
   egress {
@@ -60,16 +64,21 @@ resource "aws_security_group" "rds_mysql" {
   })
 }
 
+
 resource "aws_security_group" "rds_postgres" {
   name        = "${var.project_name}-rds-postgres-sg"
   description = "Security group for PostgreSQL RDS"
   vpc_id      = var.vpc_id
 
   ingress {
-    from_port       = 5432
-    to_port         = 5432
-    protocol        = "tcp"
-    security_groups = [aws_security_group.eks_nodes.id]
+    from_port = 5432
+    to_port   = 5432
+    protocol  = "tcp"
+
+    security_groups = [
+      aws_security_group.eks_nodes.id,
+      var.cluster_security_group_id
+    ]
   }
 
   egress {

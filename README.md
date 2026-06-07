@@ -46,7 +46,7 @@ kubectl get ingress -n retail-app
 ```
 
 ## CI/CD Pipeline
-- Pull Request → Terraform Plan posted as PR comment
+- Pull Request (PR-TEST) → Terraform Plan posted as PR comment
 - Merge to main → Terraform Apply
 
 ## Developer Access
