@@ -6,6 +6,13 @@ terraform/.terraform.lock.hcl
 terraform/*.tfvars
 !terraform/terraform.tfvars.example
 
+# Terraform generated files
+terraform/tfplan
+
+# Accidental CLI output files
+terraform/--instance-ids
+terraform/--query
+
 # AWS
 *.pem
 *.key
