@@ -96,7 +96,7 @@ project-bedrock.54.165.244.253.nip.io
 
 #### Architecture Diagram
 
-See `Architecture-Diagram.png` included in the submission package.
+![Project Bedrock Architecture](project-bedrock-architecture.png)
 
 ## Managed Data Layer
 
