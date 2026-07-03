@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "assets" {
-  bucket        = "bedrock-assets-${var.student_id}"
+  bucket        = "bedrock-assets-alt-soe-025-3635-v2"
   force_destroy = true
 
   tags = merge(var.tags, {
-    Name = "bedrock-assets-${var.student_id}"
+    Name = "bedrock-assets-alt-soe-025-3635-v2"
   })
 }
 

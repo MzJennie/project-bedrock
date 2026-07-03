@@ -50,9 +50,9 @@ module "eks" {
   eks_nodes_role_arn   = module.iam.eks_nodes_role_arn
   eks_nodes_sg_id      = module.security_groups.eks_nodes_sg_id
   node_instance_type   = "t3.small"
-  node_desired_size    = 5
+  node_desired_size    = 2
   node_min_size        = 1
-  node_max_size        = 5
+  node_max_size        = 2
   tags                 = var.tags
 }
 

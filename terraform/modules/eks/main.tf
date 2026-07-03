@@ -1,7 +1,7 @@
 resource "aws_eks_cluster" "main" {
   name     = var.cluster_name
   role_arn = var.eks_cluster_role_arn
-  version  = "1.31"
+  version  = "1.34"
 
   vpc_config {
     subnet_ids              = concat(var.private_subnet_ids, var.public_subnet_ids)

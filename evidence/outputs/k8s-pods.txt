@@ -1,6 +1,12 @@
-NAME                        READY   STATUS    RESTARTS   AGE
-carts-6cb6dcbc78-cnp46      1/1     Running   0          3d16h
-catalog-797c64ddfc-pvp5s    1/1     Running   0          3d19h
-checkout-7b7db788fb-wr54b   1/1     Running   0          3d20h
-orders-78945c4b57-gb9w6     1/1     Running   0          3d19h
-ui-65c6f5fd98-wg7qb         1/1     Running   0          3d20h
+NAMESPACE           NAME                                                              READY   STATUS    RESTARTS   AGE
+amazon-cloudwatch   amazon-cloudwatch-observability-controller-manager-c996f64mdkz5   1/1     Running   0          11m
+amazon-cloudwatch   cloudwatch-agent-49nd2                                            1/1     Running   0          11m
+amazon-cloudwatch   cloudwatch-agent-flng4                                            1/1     Running   0          11m
+amazon-cloudwatch   fluent-bit-d8j2z                                                  1/1     Running   0          11m
+amazon-cloudwatch   fluent-bit-fhbl9                                                  1/1     Running   0          11m
+kube-system         aws-node-6wdxx                                                    2/2     Running   0          11m
+kube-system         aws-node-9sg98                                                    2/2     Running   0          11m
+kube-system         coredns-6976d5bf49-jt54w                                          1/1     Running   0          27m
+kube-system         coredns-6976d5bf49-tnb9j                                          1/1     Running   0          32m
+kube-system         kube-proxy-qvfhj                                                  1/1     Running   0          13m
+kube-system         kube-proxy-r4899                                                  1/1     Running   0          13m
