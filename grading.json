@@ -2,12 +2,12 @@
   "assets_bucket_name": {
     "sensitive": false,
     "type": "string",
-    "value": "bedrock-assets-alt-soe-025-3635"
+    "value": "bedrock-assets-alt-soe-025-3635-v2"
   },
   "cluster_endpoint": {
     "sensitive": false,
     "type": "string",
-    "value": "https://D0F4BF916A8ECC00973E750420ED72A6.gr7.us-east-1.eks.amazonaws.com"
+    "value": "https://0057A4FF40ABE456E46D0CCBF270F517.gr7.us-east-1.eks.amazonaws.com"
   },
   "cluster_name": {
     "sensitive": false,
@@ -17,12 +17,12 @@
   "mysql_endpoint": {
     "sensitive": false,
     "type": "string",
-    "value": "project-bedrock-mysql.cop8qmuak7in.us-east-1.rds.amazonaws.com"
+    "value": "project-bedrock-mysql.ci5y884aql53.us-east-1.rds.amazonaws.com"
   },
   "postgres_endpoint": {
     "sensitive": false,
     "type": "string",
-    "value": "project-bedrock-postgres.cop8qmuak7in.us-east-1.rds.amazonaws.com"
+    "value": "project-bedrock-postgres.ci5y884aql53.us-east-1.rds.amazonaws.com"
   },
   "region": {
     "sensitive": false,
@@ -32,6 +32,6 @@
   "vpc_id": {
     "sensitive": false,
     "type": "string",
-    "value": "vpc-03167faf956a9f652"
+    "value": "vpc-07b0c807a2e476923"
   }
 }
