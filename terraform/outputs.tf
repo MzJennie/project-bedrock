@@ -32,3 +32,20 @@ output "postgres_endpoint" {
   description = "PostgreSQL RDS endpoint"
   value       = module.rds.postgres_endpoint
 }
+output "dev_view_access_key_id" {
+  description = "Developer IAM Access Key ID"
+  value       = module.iam.dev_view_access_key_id
+  sensitive   = true
+}
+
+output "dev_view_secret_access_key" {
+  description = "Developer IAM Secret Access Key"
+  value       = module.iam.dev_view_secret_access_key
+  sensitive   = true
+}
+
+output "dev_view_password" {
+  description = "Developer IAM Console Password"
+  value       = module.iam.dev_view_password
+  sensitive   = true
+}
